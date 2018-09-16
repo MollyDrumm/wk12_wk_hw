@@ -1,4 +1,4 @@
-const Request = require('../helpers/request_helper.js');
+const BeerView = require('./beer_view.js');
 const PubSub = require('../helpers/pub_sub.js');
 
 const BeerListView = function (container) {
@@ -13,5 +13,12 @@ BeerListView.prototype.bindEvents = function () {
     });
 }
 
+BeerListView.prototype.render = function (beers) {
+  console.log("hello");
+  beers.forEach((beer) => {
+      const beerView = new BeerView(this.container, beer);
+      beerView.render();
+  });
+}
 
 module.exports = BeerListView;
