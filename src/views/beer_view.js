@@ -18,7 +18,6 @@ BeerView.prototype.render = function () {
   const beerDescription = document.createElement('li');
   const img = document.createElement('img');
 
-  img.classList.add('medium-image');
 
   beerTagline.textContent = this.beer.tagline;
   beerFirstBrewed.textContent = this.beer.first_brewed;
