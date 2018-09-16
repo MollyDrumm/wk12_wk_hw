@@ -1,15 +1,30 @@
 * {
   background-color: #72DDF7;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  
 
 }
 
 h1 {
   color: white;
   font-size: 50px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+
 }
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 
 li {
   list-style-position: inside;
+  justify-content: center;
+  margin-bottom: 5px
 
 }
