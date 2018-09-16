@@ -13,6 +13,7 @@ BeerListView.prototype.bindEvents = function () {
     });
 }
 
+
 BeerListView.prototype.render = function (beers) {
   console.log("hello");
   beers.forEach((beer) => {
