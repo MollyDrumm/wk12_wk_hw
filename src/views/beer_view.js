@@ -16,13 +16,22 @@ BeerView.prototype.render = function () {
   const beerTagline = document.createElement('li');
   const beerFirstBrewed = document.createElement('li');
   const beerDescription = document.createElement('li');
+  const img = document.createElement('img');
+
+  img.classList.add('medium-image');
+
   beerTagline.textContent = this.beer.tagline;
   beerFirstBrewed.textContent = this.beer.first_brewed;
   beerDescription.textContent = this.beer.description;
+  img.src = this.beer.image;
+
   beerDetailList.appendChild(beerTagline);
   beerDetailList.appendChild(beerFirstBrewed);
   beerDetailList.appendChild(beerDescription);
+  this.container.appendChild(img);
   beerContainer.appendChild(beerDetailList);
+
 }
+
 
 module.exports = BeerView;
