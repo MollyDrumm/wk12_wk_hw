@@ -24,6 +24,7 @@ h2 {
 
 li {
   list-style-position: inside;
+  list-style-type: none;
   justify-content: center;
   margin-bottom: 5px
 

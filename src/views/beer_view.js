@@ -19,9 +19,9 @@ BeerView.prototype.render = function () {
   const img = document.createElement('img');
 
 
-  beerTagline.textContent = this.beer.tagline;
-  beerFirstBrewed.textContent = this.beer.first_brewed;
-  beerDescription.textContent = this.beer.description;
+  beerTagline.textContent = `Tagline: ${this.beer.tagline}`;
+  beerFirstBrewed.textContent = `First Brewed: ${this.beer.first_brewed}`;
+  beerDescription.textContent = `Description: ${this.beer.description}`;
   img.src = this.beer.image_url;
 
   beerDetailList.appendChild(beerTagline);
