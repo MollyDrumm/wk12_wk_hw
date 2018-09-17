@@ -22,12 +22,12 @@ BeerView.prototype.render = function () {
   beerTagline.textContent = this.beer.tagline;
   beerFirstBrewed.textContent = this.beer.first_brewed;
   beerDescription.textContent = this.beer.description;
-  img.src = this.beer.image;
+  img.src = this.beer.image_url;
 
   beerDetailList.appendChild(beerTagline);
   beerDetailList.appendChild(beerFirstBrewed);
   beerDetailList.appendChild(beerDescription);
-  this.container.appendChild(img);
+  beerDetailList.appendChild(img);
   beerContainer.appendChild(beerDetailList);
 
 }
